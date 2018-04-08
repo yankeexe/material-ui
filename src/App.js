@@ -27,8 +27,11 @@ class App extends Component {
 
       <Drawer
         open={this.state.open}
-        onRequestChange={(open)=> this.setState({open})}
-      />
+        onRequestChange={(open)=> this.setState({open})}>
+        <AppBar title = "AppBar"
+        onLeftIconButtonClick={this.handleToggle}
+        />
+      </Drawer>
         <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
