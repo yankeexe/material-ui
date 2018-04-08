@@ -28,7 +28,7 @@ class App extends Component {
       <Drawer
         open={this.state.open}
         onRequestChange={(open)=> this.setState({open})}>
-        <AppBar title = "AppBar"
+        <AppBar title = "It's Open!"
         onLeftIconButtonClick={this.handleToggle}
         />
       </Drawer>
